@@ -1,10 +1,11 @@
 from selenium import webdriver
 import requests
+import getpass
 from selenium.webdriver.common.by import By
 import time
 
 id_name = input("Enter your Codeforces ID:")
-password = input("Enter your Password:")
+password = getpass.getpass("Enter your Password:")
 mashup_code = input("Enter your Gym Unique Code:")
 
 dont_add = set()
